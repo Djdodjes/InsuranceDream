@@ -1,0 +1,33 @@
+﻿@model InsuranceViewModel
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Insurance Dream</h1>
+    <p class="lead"></p>
+</div>
+
+<div class="row">
+    <div class="col-md-8">        
+        <p>Fire Option : <input type="checkbox" id="fireOptionCheck" @(Model.FireOption.Checked ? "checked='checked'" : "") /></p>
+    </div>
+    <br />
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <p>Tax</p>
+        <h2>20 %</h2>
+    </div>
+    <div class="col-md-4">
+        <p>Base Price</p>
+        <h2 id="basePriceVal"> @Model.BasePrice</h2>
+        
+    </div>
+    <div class="col-md-4">
+        <p>Sales Price</p>
+        <h2 id="salesPriceVal">@Model.SalesPrice</h2>
+    </div>
+</div>
