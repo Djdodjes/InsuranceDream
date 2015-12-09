@@ -4,13 +4,15 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
+<div class="jumbotron text-center">
     <h1>Insurance Dream</h1>
-    <p class="lead"></p>
+    <p class="lead">
+        <img src="http://www.spy-immo.fr/site/images/normal/Laius-des-pages-annonces-Annonces---Maisons549be49f405bb.png" height="200" width="270" />
+    </p>
 </div>
 
 <div class="row">
-    <div class="col-md-8">        
+    <div class="col-md-12 alert alert-danger">        
         <p>Fire Option : <input type="checkbox" id="fireOptionCheck" @(Model.FireOption.Checked ? "checked='checked'" : "") /></p>
     </div>
     <br />
