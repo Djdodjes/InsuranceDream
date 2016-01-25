@@ -3,12 +3,6 @@
 	As a prospect
 	I want to see home insurance
 
-#prix hors taxe - Net Price or base price 
-#prix TTC - Price including tax 
-#prix d'achat - purchase price 
-#prix de vente - sales price
-
-@mytag
 Scenario: Show insurance
 	When I open insurance page
 	Then the result should show the home insurance

@@ -1,16 +1,13 @@
 ﻿using InsuranceDream.DataAccess;
 using InsuranceDream.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace InsuranceDream.Business
 {
-
     public class InsuranceDreamManager : IInsuranceDreamManager
     {
+        /// <summary>
+        /// rregtr
+        /// </summary>
         private IInsuranceRepository insuranceRepository;
 
         public InsuranceDreamManager()
@@ -22,7 +19,9 @@ namespace InsuranceDream.Business
         {
             var currentInsurance = insuranceRepository.GetInsurance();
             if (isFireOptionChecked)
+            {
                 return CalculateInsurancePrice(currentInsurance);
+            }
 
             return currentInsurance;
         }

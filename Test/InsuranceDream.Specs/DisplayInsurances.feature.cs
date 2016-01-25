@@ -66,20 +66,18 @@ namespace InsuranceDream.Specs
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Show insurance")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
         public virtual void ShowInsurance()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Show insurance", new string[] {
-                        "mytag"});
-#line 12
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Show insurance", ((string[])(null)));
+#line 6
 this.ScenarioSetup(scenarioInfo);
-#line 13
+#line 7
  testRunner.When("I open insurance page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 14
+#line 8
  testRunner.Then("the result should show the home insurance", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 15
+#line 9
  testRunner.And("the base price is 200", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 16
+#line 10
  testRunner.And("the sales price is 240", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
@@ -90,15 +88,15 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void ShowFireOption()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Show Fire Option", ((string[])(null)));
-#line 18
+#line 12
 this.ScenarioSetup(scenarioInfo);
-#line 19
+#line 13
  testRunner.When("I open insurance page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 20
+#line 14
  testRunner.Then("the result should show the home insurance", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 21
+#line 15
  testRunner.And("the Fire Option is display with empty checkbox", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 22
+#line 16
  testRunner.And("the Fire Option is 30", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
@@ -109,15 +107,15 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void CheckFireOption()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check Fire Option", ((string[])(null)));
-#line 24
+#line 18
 this.ScenarioSetup(scenarioInfo);
-#line 25
+#line 19
  testRunner.When("I check fire option", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 26
+#line 20
  testRunner.Then("the result should refresh the home insurance", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 27
+#line 21
  testRunner.And("the base price is 230", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 28
+#line 22
  testRunner.And("the sales price is 276", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
